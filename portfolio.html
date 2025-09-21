@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Digpal Jagtap</title>
+  <meta name="description" content="Portfolio of Digpal Jagtap showcasing projects, innovations, and works in AI, drones, and engineering." />
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f7f7f7;
+      color: #333;
+      border-left: 8px solid #0a1d3a;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+    .navbar .logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .navbar .nav-links a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .navbar .nav-links a:hover {
+      color: #2563eb;
+    }
+
+    /* Portfolio Section */
+    .portfolio-section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+    .portfolio-section h2 {
+      text-align: center;
+      font-size: 36px;
+      color: #0a1d3a;
+      margin-bottom: 40px;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .portfolio-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .portfolio-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .portfolio-info {
+      padding: 15px;
+    }
+    .portfolio-info h3 {
+      font-size: 20px;
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+    .portfolio-info p {
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .portfolio-card img {
+      width: 100%;
+      display: block;
+      border-top: 1px solid #ccc;
+      border-radius: 0 0 12px 12px;
+      height: auto;       /* natural height */
+      object-fit: unset;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f0f0f0;
+      padding: 20px 60px;
+      text-align: right;
+      font-size: 14px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🔷 <strong>DIGPAL JAGTAP</strong> <span>/ FRESHER</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="portfolio-section">
+    <h2>My Portfolio</h2>
+    <div class="portfolio-grid">
+      <!-- Portfolio Item 1 -->
+      <div class="portfolio-card">
+        <div class="portfolio-info">
+          <h3>Drone Survey for Bridge Construction</h3>
+          <p>Developed UAV-based surveying system for real-time mapping and monitoring of bridges using LiDAR and OpenCV.</p>
+        </div>
+        <img src="drone1.jpg" alt="Drone Survey Project">
+        <img src="lidar.jpg" alt="Drone Survey Project">
+      </div>
+
+      <!-- Portfolio Item 3 -->
+      <div class="portfolio-card">
+        <div class="portfolio-info">
+          <h3>IoT-Based Sanitary Pad Vending Machine</h3>
+          <p>Implemented an automated vending system with IoT integration and monitoring dashboard using Python and sensors.</p>
+        </div>
+        <img src="sp.jpg" alt="Sanitary Pad Vending Machine">
+        <img src="sp2.jpg" alt="Sanitary Pad Vending Machine">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Digpal Jagtap. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

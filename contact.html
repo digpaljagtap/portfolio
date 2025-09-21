@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Digpal Jagtap</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    body { background-color:#fff; color:#333; border-left:8px solid #0a1d3a; display:flex; flex-direction:column; min-height:100vh;}
+    .navbar { display:flex; justify-content:space-between; align-items:center; padding:20px 60px; background-color:#fff; border-bottom:1px solid #ccc;}
+    .navbar .logo { font-size:18px; font-weight:bold; }
+    .navbar .nav-links { list-style:none; display:flex; gap:20px;}
+    .navbar .nav-links a { text-decoration:none; color:#000; font-weight:500; }
+    .navbar .nav-links a:hover { color:#2563eb; }
+    .contact-section { max-width:800px; margin:60px auto; padding:40px 60px; text-align:center;}
+    .contact-section h2 { font-size:36px; margin-bottom:20px; color:#0a1d3a;}
+    .contact-section p { font-size:16px; color:#444; margin:10px 0;}
+    .contact-info p { font-size:18px; margin:12px 0;}
+    .contact-info a { color:#2563eb; text-decoration:none; font-weight:bold;}
+    .contact-info a:hover { text-decoration:underline;}
+    .contact-form { margin-top:40px; text-align:left;}
+    .contact-form label { display:block; margin:10px 0 5px; font-weight:bold; color:#0a1d3a;}
+    .contact-form input, .contact-form textarea { width:100%; padding:12px; border:1px solid #ccc; border-radius:8px; font-size:16px; margin-bottom:15px;}
+    .contact-form textarea { resize: vertical; min-height:120px;}
+    .contact-form button { background-color:#2563eb; color:#fff; padding:12px 25px; border:none; border-radius:20px; cursor:pointer; font-size:16px; transition: background 0.3s;}
+    .contact-form button:hover { background-color:#1d4ed8;}
+    footer { background-color:#f0f0f0; padding:20px 60px; text-align:right; font-size:14px; margin-top:auto;}
+    .social-icon-footer { width:24px; height:24px; margin-left:10px; vertical-align:middle; transition:filter 0.3s ease;}
+    .social-icon-footer:hover { filter: brightness(1.1);}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🔷 <strong>DIGPAL JAGTAP</strong> <span>/ FRESHER</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out through any of the following channels:</p>
+
+    <div class="contact-info">
+     <p>
+       <img src="call.png" alt="Call Icon" style="width:18px; height:18px; vertical-align:middle; margin-right:8px;">
+       <a href="tel:+919529887966">+91 9529887966</a>
+     </p>
+     <p>
+       <img src="email.png" alt="Email Icon" style="width:30px; height:30px; vertical-align:middle; margin-right:8px;">
+       <a href="mailto:digpaljagtap68@gmail.com">digpaljagtap68@gmail.com</a>
+     </p>
+    </div>
+
+    <!-- Formspree Contact Form -->
+    <div class="contact-form">
+      <form action="https://formspree.io/f/mandrvng" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>Follow Me
+      <a href="https://www.facebook.com/digpal.jagtap.77" target="_blank"><img src="f.png" class="social-icon-footer" alt="Facebook"></a>
+      <a href="https://x.com/digpaljagtap001" target="_blank"><img src="X.png" class="social-icon-footer" alt="Twitter"></a>
+      <a href="https://www.instagram.com/digpal_jagtap_/" target="_blank"><img src="I.jpeg" class="social-icon-footer" alt="Instagram"></a>
+      <a href="https://www.linkedin.com/in/digpal-jagtap-6a3056222/" target="_blank"><img src="L.png" class="social-icon-footer" alt="LinkedIn"></a>
+    </p>
+    <hr style="margin:20px 0; border:0; border-top:1px solid #ccc;">
+    <p style="font-size:13px; color:#555;">&copy; 2025 Digpal Jagtap. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Digpal Jagtap</title>
+  <meta name="description" content="Projects by Digpal Jagtap - drones, AI, and innovative engineering solutions." />
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fff; /* White page */
+      color: #333;
+      border-left: 8px solid #0a1d3a; /* Left blue border */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+    .navbar .logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .navbar .nav-links a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+    .navbar .nav-links a:hover { color: #2563eb; }
+
+    /* Projects Section */
+    .projects-section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 40px 60px;
+    }
+
+    .projects-section h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #0a1d3a;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 25px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover { transform: translateY(-6px); }
+
+    .project-card h3 {
+      color: #2563eb;
+      margin-bottom: 12px;
+    }
+
+    .project-card p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .project-links a {
+      display: inline-block;
+      margin-right: 12px;
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .project-links a:hover { color: #1d4ed8; }
+
+    /* Footer */
+    footer {
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: right;
+      font-size: 14px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🔷 <strong>DIGPAL JAGTAP</strong> <span>/ FRESHER</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="projects-section">
+    <h2>My Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>Drone-Based Survey and Mapping for Bridge Construction</h3>
+      <p>
+        Developed a drone-based system to survey and map bridge structures for construction 
+        management and structural health monitoring. Used UAVs with LiDAR and high-resolution 
+        cameras for topographic mapping, defect detection (cracks, corrosion), and real-time 
+        structural monitoring. Implemented data processing in <strong>Python</strong> with 
+        <strong>OpenCV</strong>, and used <strong>ArduPilot</strong> for drone calibration.
+      </p>
+      <div class="project-links">
+        <a href="https://github.com/digpaljagtap/CDAC-Project" target="_blank">🔗 GitHub</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3>IoT-Based Sanitary Pad Vending Machine</h3>
+      <p>
+        Designed and implemented a smart vending machine using IoT and microcontrollers. 
+        Integrated sensors and payment gateways to automate dispensing of sanitary pads. 
+      </p>
+    </div>
+
+    <!-- Add more projects in same structure -->
+     <div class="project-card">
+      <h3>Yes Bank Stock Closing Price Prediction</h3>
+      <p>
+        Built a machine learning model to predict the monthly closing stock price of Yes Bank 
+        using historical data (Open, High, Low, Close). Analyzed the impact of the 2018 fraud 
+        case on market trends. Implemented and compared Linear Regression and Random Forest, 
+        with Linear Regression showing the best performance. Future scope includes time series 
+        models for improved forecasting.
+      </p>
+      <div class="project-links">
+        <a href="https://github.com/digpaljagtap/Yes-Bank-Project-1" target="_blank">🔗 GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Brain Tumor MRI Image Classification</h3>
+      <p>
+        Developed a deep learning-based system to classify brain MRI scans into distinct tumor types. 
+        Implemented both a custom CNN and transfer learning models (MobileNetV2, ResNet50, EfficientNetB0) 
+        for accurate diagnosis. Integrated the best-performing model into a Streamlit web app, enabling 
+        real-time tumor prediction to assist radiologists and healthcare providers.
+      </p>
+      <div class="project-links">
+        <a href="https://github.com/digpaljagtap/Brain-Tumor-Project-3" target="_blank">🔗 GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Multiclass Fish Image Classification</h3>
+      <p>
+        Built an AI-powered system to classify fish species using both a custom CNN and transfer learning 
+        models (VGG16, ResNet50, InceptionV3, EfficientNetB0, MobileNetV2). Applied preprocessing and data 
+        augmentation for robustness against lighting, orientation, and background variations. Deployed the final 
+        model in a Streamlit web app for real-time fish species prediction with confidence scores.
+      </p>
+      <div class="project-links">
+        <a href="https://github.com/digpaljagtap/Fish-Classification-Project-5" target="_blank">🔗 GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <h3>Vaccination & Disease Surveillance Analytics</h3>
+      <p>
+        Designed a complete data analytics pipeline for immunization and disease monitoring by integrating 
+        vaccination coverage, incidence, reported cases, and vaccine schedule datasets. Performed data 
+        cleaning, transformation, and storage in SQLite for structured analysis, followed by interactive 
+        Power BI dashboards. The project enables policymakers and health officials to track trends, 
+        identify gaps, and make data-driven public health decisions.
+      </p>
+      <div class="project-links">
+        <a href="https://github.com/digpaljagtap/Vaccination_Project_7" target="_blank">🔗 GitHub</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Digpal Jagtap. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

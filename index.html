@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digpal Jagtap - Data Scientist</title>
+  <meta name="description" content="Digpal Jagtap - Data Scientist portfolio showcasing projects, resume, and contact information." />
+
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f7f7f7;
+      color: #333;
+      border-left: 8px solid #0a1d3a; /* Left border */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+    .navbar .logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .navbar .nav-links a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .navbar .nav-links a:hover {
+      color: #2563eb; /* blue hover effect */
+    }
+
+    /* Intro section */
+    .intro-section {
+      display: flex;
+    }
+    .profile-card {
+      width: 30%;
+      background-color: #111827;
+      min-height: 100vh;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      box-shadow: 4px 0 15px rgba(0, 0, 0, 0.05);
+    }
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 2.5cm;
+      border: 4px solid #007bff;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .profile-card h1 {
+      font-size: 36px;
+      line-height: 1.2;
+      margin: 10px 0;
+    }
+    .profile-card p {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 5px;
+      letter-spacing: 1px;
+    }
+    .profile-card hr {
+      width: 60px;
+      margin: 10px auto;
+      border: 1px solid #ffffff;
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 0 6px;
+    }
+    .social-icon {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.3s;
+    }
+    .social-icon:hover {
+      transform: scale(1.2);
+    }
+
+    .intro-text {
+      width: 70%;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .intro-text h2 {
+      font-size: 42px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .intro-text h3 {
+      font-size: 20px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .intro-text p {
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    /* Buttons */
+    .buttons {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .btn-blue {
+      background-color: #2563eb;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      border: none;
+      transition: background 0.3s;
+    }
+    .btn-blue:hover {
+      background-color: #1d4ed8;
+    }
+    .btn-outline {
+      padding: 10px 20px;
+      border: 2px solid #2563eb;
+      color: #2563eb;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    .btn-outline:hover {
+      background: #2563eb;
+      color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: right;
+      font-size: 14px;
+      margin-top: auto;
+    }
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🔷 <strong>DIGPAL JAGTAP</strong> <span>/ FRESHER</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="intro-section">
+    <div class="profile-card">
+      <img src="myp.jpg" alt="Digpal Jagtap" class="profile-image" />
+      <h1>Digpal<br />Jagtap</h1>
+      <hr />
+      <p>DATA SCIENTIST</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/digpal.jagtap.77" target="_blank"><img src="f.png" alt="Facebook" class="social-icon" /></a>
+        <a href="https://www.instagram.com/digpal_jagtap_/" target="_blank"><img src="I.png" alt="Instagram" class="social-icon" /></a>
+        <a href="https://x.com/digpaljagtap001" target="_blank"><img src="X.png" alt="Twitter" class="social-icon" /></a>
+        <a href="https://www.linkedin.com/in/digpal-jagtap-6a3056222/" target="_blank"><img src="L.png" alt="LinkedIn" class="social-icon" /></a>
+      </div>
+    </div>
+
+    <div class="intro-text">
+      <h2>HI!</h2>
+      <h3>Turning Ideas into Reality</h3>
+      <div class="buttons">
+        <a href="resume.html" class="btn-blue">View Resume</a>
+        <a href="projects.html" class="btn-outline">Explore Projects</a>
+      </div>
+      <p>
+        Hi! I'm <strong>Digpal Jagtap</strong>, a passionate creator working across technology and innovation. Whether it's building drones from scratch, or exploring AI-powered solutions, I turn ideas into reality. This site is a hub for all my projects—past, present, and future.
+      </p>
+      <p>
+        I hold a B.E. in Mechanical Engineering from Savitribai Phule Pune University and a Postgraduate Diploma in Unmanned Aircraft System Programming from C-DAC. With hands-on experience in drone development, voice-controlled robotics, and AI-based structural monitoring, I work at the intersection of hardware and intelligent software.
+      </p>
+      <p>
+        I’ve used tools like <strong>Python, OpenCV, ArduPilot, RoboStudio, SQL, and Excel</strong> in projects ranging from drone-based bridge inspections to sanitary pad vending machines with IoT integration.
+      </p>
+      <p>
+        I'm always open to new opportunities that challenge my skills and expand my impact.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Digpal Jagtap. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

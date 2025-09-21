@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume - Digpal Jagtap</title>
+  <meta name="description" content="Educational background and skills of Digpal Jagtap." />
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fff; 
+      color: #333;
+      border-left: 8px solid #0a1d3a; 
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+    .navbar .logo { font-size: 18px; font-weight: bold; }
+    .navbar .nav-links { list-style: none; display: flex; gap: 20px; }
+    .navbar .nav-links a { text-decoration: none; color: #000; font-weight: 500; }
+    .navbar .nav-links a:hover { color: #2563eb; }
+
+    /* Resume Section */
+    .resume-section { max-width: 900px; margin: 60px auto; padding: 40px 60px; font-size: 16px; line-height: 1.8; }
+    .resume-section h2 { font-size: 36px; color: #0a1d3a; margin-bottom: 25px; text-align: center; }
+
+    /* Education Cards */
+    .edu-container { display: flex; flex-direction: column; gap: 20px; }
+    .edu-card { padding: 20px; border-radius: 12px; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
+    .edu-card:hover { transform: translateY(-5px); }
+
+    .edu-info h3, .edu-info h4 { display: flex; align-items: center; gap: 8px; margin: 0; }
+    .edu-info h3 { font-size: 20px; color: #0a1d3a; }
+    .edu-info h4 { font-size: 16px; color: #2563eb; }
+    .edu-info p {margin: 8px 0;font-size: 16px;line-height: 1.8;color: #333; }
+
+    .edu-info img { width: 25px; height: 25px; object-fit: contain; }
+
+    /* Skills */
+    .skills-list { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; justify-content: center; }
+    .skills-list span { background: #e0e7ff; padding: 8px 14px; border-radius: 20px; font-size: 14px; font-weight: bold; color: #0a1d3a; transition: background 0.3s; }
+    .skills-list span:hover { background: #c7d2fe; }
+
+    /* Resume Button */
+    .btn-blue {
+      display: inline-block;
+      background-color: #2563eb;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 20px;
+      text-decoration: none;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin: 20px auto;
+      text-align: center;
+    }
+    .btn-blue:hover { background-color: #1d4ed8; }
+
+    /* Footer */
+    footer { background-color: #f0f0f0; padding: 20px; text-align: right; font-size: 14px; margin-top: auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🔷 <strong>DIGPAL JAGTAP</strong> <span>/ FRESHER</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="resume-section">
+        <h2>Experience</h2>
+    <div class="edu-container">
+      <div class="edu-card">
+        <div class="edu-info">
+          <h3>2024</h3>
+          <h4 style="margin-top:12px;">
+            <img src="briefcase.png" alt="Experience Logo">
+            Internship Trainee – Labmentix
+          </h4>
+          <p>Bengaluru</p>
+          <p>
+            Successfully completed an internship program at Labmentix, 
+            where I worked on multiple machine learning and AI-based projects. 
+            Gained experience in model development, data preprocessing, and 
+            deployment practices. Strengthened technical problem-solving skills 
+            through hands-on projects and teamwork.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Education</h2>
+    <div class="edu-container">
+      <div class="edu-card">
+        <div class="edu-info">
+          <h3>2023–2024</h3>
+          <h4 style="margin-top:12px;">
+            <img src="education.png" alt="Education Logo">
+            PG-Diploma in Unmanned Aircraft System Programming
+          </h4>
+          <p>C-DAC, Panchavati – Pune</p>
+          <p>
+            Pursued a Post Graduate Diploma in Unmanned Aircraft 
+            System Programming from C-DAC, Pune, focusing on drone 
+            technology, autonomous flight systems, and AI-based applications. 
+            Gained hands-on experience in AI-powered navigation, computer vision for obstacle \
+            detection, LiDAR data processing, and Python-based drone programming. 
+            Developed practical skills in integrating sensors, GPS, and IoT systems for intelligent 
+            aerial robotics projects.
+          <p>Grade - A</p>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-info">
+          <h3>2019–2023</h3>
+          <h4 style="margin-top:12px;">
+            <img src="education.png" alt="Education Logo">
+            B.E. in Mechanical Engineering
+          </h4>
+          <p>Modern College of Engineering, Pune (SPPU)</p>
+          <p>
+            Completed engineering from PES’s Modern College 
+            of Engineering, Pune, building a foundation in 
+            design, mechanics, and system modeling. Gained 
+            hands-on experience in mechanical design, CAD/CAM, 
+            and basic robotics projects. Actively participated 
+            in technical workshops to strengthen practical skills.
+          </p>
+          <p>CGPA - 7.25 </p>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-info">
+          <h3>2018–2019</h3>
+          <h4 style="margin-top:12px;">
+            <img src="education.png" alt="Education Logo">
+            12th (Science)
+          </h4>
+          <p>Jawahar Navodaya Vidyalaya ,Pune</p>
+          <p>Completed 12th Science with a strong foundation in Physics, Chemistry, and Mathematics.</p>
+          <p>Board - CBSE </p>
+          <p>Percentage - 76.38 </p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span>Python</span><span>OpenCV</span><span>Machine Learning</span>
+      <span>Drone Programming</span><span>ArduPilot</span><span>SolidWorks</span>
+      <span>CAD/CAM</span><span>SQL</span><span>Excel</span>
+      <span>LiDAR Processing</span><span>RoboStudio</span><span>UAV Design</span>
+    </div>
+
+    <!-- Button to view resume -->
+    <div style="text-align:center; margin-top:40px;">
+      <a href="Digpal Resume.pdf" target="_blank" class="btn-blue">View My Resume</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Digpal Jagtap. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
